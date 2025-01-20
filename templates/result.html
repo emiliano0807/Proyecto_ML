@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Resultados</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px; /* Incrementar el ancho máximo */
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow-x: auto; /* Permitir el desplazamiento horizontal */
+      }
+      h1, h3 {
+        color: #0056b3;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background: #eaf4fe;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 4px;
+        border-left: 6px solid #0056b3;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #0056b3;
+        border-radius: 8px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background: #f4f4f9;
+        color: #333;
+        font-weight: bold;
+      }
+      .btn-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .btn {
+        background: #0056b3;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        display: inline-block;
+      }
+      .btn:hover {
+        background: #003c8f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Aquí se insertará el HTML personalizado -->
+      {{ custom_html | safe }}
+      
+      <!-- Botón para contenido adicional -->
+      <div class="btn-container">
+        <a href="/additional" class="btn">Contenido Adicional</a>
+      </div>
+    </div>
+  </body>
+</html>
+
